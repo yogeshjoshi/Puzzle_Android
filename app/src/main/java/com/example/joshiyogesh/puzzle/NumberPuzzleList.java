@@ -14,10 +14,12 @@ public class NumberPuzzleList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.number_puzzle);
     }
+
     public void exercise1(View v){
         Intent intent = new Intent(NumberPuzzleList.this,ExerciseOneQuestionList.class);
         startActivity(intent);
 
     }
-    /*Similarly threr would be another questions*/
+
+    /*Similarly their would be another questions*/
 }
