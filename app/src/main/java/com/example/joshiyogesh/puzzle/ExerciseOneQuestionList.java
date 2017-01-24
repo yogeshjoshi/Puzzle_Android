@@ -16,7 +16,7 @@ public class ExerciseOneQuestionList extends AppCompatActivity {
     public void questionOne(View view) {
 
         Intent intent = new Intent(getApplicationContext(),ExerciseOneQuestions.class);
-        intent.putExtra("question_index",0);
+        intent.putExtra("question_index",1);
         startActivity(intent);
     }
 }

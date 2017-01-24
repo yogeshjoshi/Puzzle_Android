@@ -27,7 +27,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
             default:
                 return new Fragments();
         }*/
-        position = new ExerciseOneQuestions().questionIndexReceive;
+//        position = new ExerciseOneQuestions().questionIndexReceive;
         Fragments fragments = new Fragments();
         Bundle bundle = new Bundle();
         bundle.putInt("question_no",position);
