@@ -16,10 +16,10 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-       //switch case statement to show the fragments
+        //switch case statement to show the fragments
         //here i'll have to pass the image id as well to show that
         //in fragments
-     /*   switch (position){
+       /*  switch (position){
             case 0:
                 return new Fragments();
             case 1:
@@ -27,7 +27,8 @@ public class PagerAdapter extends FragmentPagerAdapter {
             default:
                 return new Fragments();
         }*/
-//        position = new ExerciseOneQuestions().questionIndexReceive;
+//      position = new ExerciseOneQuestions().questionIndexReceive;
+        /*position variable can not changed*/
         Fragments fragments = new Fragments();
         Bundle bundle = new Bundle();
         bundle.putInt("question_no",position);

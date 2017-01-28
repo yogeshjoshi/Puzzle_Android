@@ -14,32 +14,33 @@
        android:layout_height="wrap_content"
        android:orientation="horizontal"
        android:weightSum="3"
-       android:layout_below="@+id/imageQuestions">
+       android:layout_below="@+id/imageQuestions"
+       android:id = "@+id/radioGroup">
 
        <RadioButton
            android:text="Radio"
            android:layout_weight="1"
            android:layout_width="0dp"
            android:layout_height="wrap_content"
-           android:layout_alignBottom="@+id/radioButton"
-           android:layout_toEndOf="@+id/radioButton"
-           android:id="@+id/radioButton2" />
+           android:layout_alignBottom="@+id/option1"
+           android:layout_toEndOf="@+id/option1"
+           android:id="@+id/option2" />
 
        <RadioButton
             android:text="RadioButton"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/radioButton2"
-            android:layout_toEndOf="@+id/radioButton2"
-            android:id="@+id/radioButton3" />
+            android:layout_alignBottom="@+id/option2"
+            android:layout_toEndOf="@+id/option2"
+            android:id="@+id/option3" />
 
         <RadioButton
             android:text="RadioButton"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton"
+            android:id="@+id/option1"
             android:layout_alignParentStart="true" />
    </RadioGroup>
 
@@ -50,24 +51,24 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="115dp"
-        android:id="@+id/button" />
+        android:id="@+id/getHint" />
 
     <Button
         android:text="Answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/button"
+        android:layout_alignEnd="@+id/getHint"
         android:layout_marginBottom="56dp"
-        android:id="@+id/button2" />
+        android:id="@+id/getAnswer" />
 
     <Button
         android:text="check it .."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button2"
+        android:layout_alignBottom="@+id/getAnswer"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="27dp"
-        android:id="@+id/button4" />
+        android:id="@+id/checkIt" />
 
 </RelativeLayout>
