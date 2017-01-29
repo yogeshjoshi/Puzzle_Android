@@ -19,15 +19,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
         //switch case statement to show the fragments
         //here i'll have to pass the image id as well to show that
         //in fragments
-       /*  switch (position){
-            case 0:
-                return new Fragments();
-            case 1:
-                return new Fragments();
-            default:
-                return new Fragments();
-        }*/
-//      position = new ExerciseOneQuestions().questionIndexReceive;
+        // position = new ExerciseOneQuestions().questionIndexReceive;
         /*position variable can not changed*/
         Fragments fragments = new Fragments();
         Bundle bundle = new Bundle();
