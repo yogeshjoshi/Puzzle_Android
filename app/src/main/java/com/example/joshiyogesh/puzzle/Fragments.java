@@ -2,8 +2,10 @@ package com.example.joshiyogesh.puzzle;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -59,6 +61,16 @@ public class Fragments extends Fragment {
 
         radioGroup.setOnCheckedChangeListener(Listener1);
         radioGroup1.setOnCheckedChangeListener(Listener2);
+
+        knowHint.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
+                alertDialog.setTitle("Hint");
+                alertDialog.setMessage("Here message will come from strings.xml file");
+                alertDialog.show();
+            }
+        });
         return rootView;
     }
     private RadioGroup.OnCheckedChangeListener Listener1 = new RadioGroup.OnCheckedChangeListener() {
