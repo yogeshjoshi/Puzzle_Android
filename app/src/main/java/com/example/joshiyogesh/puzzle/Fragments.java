@@ -21,23 +21,26 @@ public class Fragments extends Fragment {
     RadioButton option1,option2,option3,option4,rb;
     RadioGroup radioGroup,radioGroup1;
     Button knowHint,checkYourAnswer;
-    String []answer;//to store answer linked in Strings.xml file
     String []option;//to store options of RadioButton Before split i.e in form 41,45,25,89
-    View rootView;
+    View rootView; // getting View from fragments
     @Override
     public View onCreateView(LayoutInflater inflater , ViewGroup container ,
                              Bundle savedInstanceState){
 
-        int [] image_index = {R.drawable.eightypageanswer1,R.drawable.eightypageanswer8};
+        int [] image_index = {R.drawable.page43question2,R.drawable.page43questionone,
+        R.drawable.page45,R.drawable.page45question3,R.drawable.page46,R.drawable.page49,R.drawable.page49questionthird,
+        R.drawable.page50,R.drawable.page50question3,R.drawable.page51,R.drawable.page51question2,R.drawable.page51question3,
+        R.drawable.page52,R.drawable.page52question2,R.drawable.page52question3,R.drawable.page53,
+        R.drawable.page53question2,R.drawable.page53question2,R.drawable.page53question3,
+                R.drawable.page54,R.drawable.page55};
         Bundle bundle = getArguments();
-        final int message = bundle.getInt("question_no");
+        final int question_index = bundle.getInt("Question_no");
         rootView = inflater.inflate(R.layout.fragments,container,false);
          /*
          getting resources from java string.xml file
          */
-        answer = getResources().getStringArray(R.array.answer);
         option = getResources().getStringArray(R.array.options);
-        String[] optionIndex = option[message].split(",");
+        String[] optionIndex = option[question_index].split(",");
         /*
         assigning java objects to their corresponding ID's of xml file
         */
@@ -53,7 +56,7 @@ public class Fragments extends Fragment {
         /*
         setting resources to fragments...
         */
-        imageView.setImageResource(image_index[message]);
+        imageView.setImageResource(image_index[question_index]);
         option1.setText(optionIndex[0]);
         option2.setText(optionIndex[1]);
         option3.setText(optionIndex[2]);

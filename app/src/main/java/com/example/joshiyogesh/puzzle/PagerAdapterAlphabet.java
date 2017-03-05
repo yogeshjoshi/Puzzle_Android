@@ -6,30 +6,28 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 /**
- * Created by Joshi Yogesh on 16/01/2017.
+ * Created by Joshi Yogesh on 05/02/2017.
  */
 
-public class PagerAdapter extends FragmentPagerAdapter {
-    public PagerAdapter(FragmentManager fm) {
+public class PagerAdapterAlphabet extends FragmentPagerAdapter {
+    public PagerAdapterAlphabet(FragmentManager fm) {
         super(fm);
     }
 
     @Override
     public Fragment getItem(int position) {
-        //switch case statement to show the fragments
-        //here i'll have to pass the image id as well to show that
-        //in fragments
-        // position = new ExerciseOneQuestions().questionIndexReceive;
-        /*position variable can not changed*/
         Fragments fragments = new Fragments();
         Bundle bundle = new Bundle();
-        bundle.putInt("Question_no",position);
+        bundle.putInt("Question_no",position+15);
+        /*here gap should be given above ... so thatv we cane select the proper image from
+        * int image id in fragments .. here we are using only one fragments*/
         fragments.setArguments(bundle);
         return fragments;
     }
 
     @Override
     public int getCount() {
-        return 20;
+        return 2;
+        /*return should be number of fragments are in swipe view or in this case images*/
     }
 }

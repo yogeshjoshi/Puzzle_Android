@@ -5,17 +5,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ExerciseOneQuestionList extends AppCompatActivity {
+/**
+ * Created by Joshi Yogesh on 04/02/2017.
+ */
 
+public class ExerciseTwoQuestionsList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercise_one_question_list);
+        setContentView(R.layout.activity_exercise_two_questions_list);
     }
 
     public void questionOne(View view) {
-
-        Intent intent = new Intent(getApplicationContext(),ExerciseOneQuestions.class);
+        Intent intent = new Intent(getApplicationContext(),ExerciseTwoQuestions.class);
         intent.putExtra("Question_index",1);
         startActivity(intent);
     }

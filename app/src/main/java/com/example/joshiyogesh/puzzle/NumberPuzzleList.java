@@ -21,5 +21,25 @@ public class NumberPuzzleList extends AppCompatActivity {
 
     }
 
+    public void exercise2(View view) {
+        Intent intent = new Intent(NumberPuzzleList.this,ExerciseTwoQuestionsList.class);
+        startActivity(intent);
+    }
+
+    public void exercise3(View view) {
+        Intent intent = new Intent(NumberPuzzleList.this,ExerciseThirdQuestionList.class);
+        startActivity(intent);
+    }
+
+    public void exercise4(View view) {
+        Intent intent = new Intent(NumberPuzzleList.this,ExerciseThirdQuestionList.class);
+        startActivity(intent);
+    }
+
+    public void exercise5(View view) {
+        Intent intent = new Intent(NumberPuzzleList.this,ExerciseThirdQuestionList.class);
+        startActivity(intent);
+    }
+
     /*Similarly their would be another questions*/
 }

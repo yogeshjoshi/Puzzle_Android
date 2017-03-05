@@ -11,4 +11,34 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:onClick="exercise1"/>
+    <Button
+        android:text="Exercise 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_2"
+        android:layout_below="@+id/exercise_1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:onClick="exercise2"/>
+    <Button
+        android:text="Exercise 3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_3"
+        android:layout_below="@+id/exercise_2"
+        android:onClick="exercise3"/>
+    <Button
+        android:text="Exercise 4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/exercise_4"
+        android:layout_below="@+id/exercise_3"
+        android:onClick="exercise4"/>
+    <Button
+        android:text="Exercise 5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/exercise_5"
+        android:layout_below="@+id/exercise_4"
+        android:onClick="exercise5"/>
 </RelativeLayout>
